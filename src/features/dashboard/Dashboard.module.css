@@ -1,0 +1,58 @@
+.button-today {
+    all: unset;
+    cursor: pointer;
+    width: 35px;
+    height: 16px;
+
+    /* text-xs/Regular */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    color: #18181B;
+
+    padding: 6px 16px;
+    background: #F4F4F5;
+    /* Inside auto layout */
+}
+
+.button-arrow-next {
+    all: unset;
+    cursor: pointer;
+    background: #F4F4F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    color: #18181B;
+    border-radius: 0 6px 6px 0;
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.button-arrow-previous {
+    all: unset;
+    cursor: pointer;
+    background: #F4F4F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    color: #18181B;
+    border-radius: 6px 0 0 6px;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+.button-arrow-next:hover, .button-arrow-previous:hover, .button-today:hover {
+    background: #e1e1e1;
+}
