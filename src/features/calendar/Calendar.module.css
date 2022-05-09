@@ -1,0 +1,145 @@
+.calendar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-select{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+}
+
+.general-font-properties {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 2.0rem;
+    line-height: 40px;
+}
+
+.target-month {
+    font-weight: 500;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.target-year {
+    font-weight: 400;
+    margin-left: 10px;
+    color: #EF4444;
+}
+
+.button-arrow {
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    border-radius: 3px;
+
+}
+
+.button-arrow:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.calendar-row{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.calendar-row span {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 160% */
+    color: #71717A;
+    position: absolute;
+}
+
+.calendar-table {
+    margin-top: 1.7rem;
+    margin-left: 10px;
+}
+
+.current-day span{
+    color: white;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    .ipad-portrait {
+        color: red;
+    }
+
+    /* your css rules for ipad portrait */
+}
+
+.is-today{
+    position: absolute;
+    background: rgb(59, 130, 246);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.is-not-today{
+    display: none;
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+    .general-font-properties {
+        font-size: 1.4rem;
+    }
+
+    .calendar-header {
+        padding-right: 10px;
+    }
+
+    .button-arrow {
+        margin-right: 5px;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .calendar-row span {
+        font-size: 0.8rem;
+    }
+
+    .calender-row th {
+        margin: auto;
+        width: 2rem;
+    }
+
+}
+
