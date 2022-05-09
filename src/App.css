@@ -1,39 +1,47 @@
-.App {
-  text-align: center;
+.load-rainbow div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    border: none    ;
+    outline: none;
+    background-repeat: repeat-x;
+    background: linear-gradient(to right,
+    #ff0000,
+    #ffff00,
+    #008000,
+    #0000ff,
+    #ee82ee,
+    #ff0000
+    );
+    animation: rainbow 3s cubic-bezier(0, 1.11, 1, .54) infinite;
+    background-size: 200% 100% !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.load-rainbow {
+    padding: 0;
+    margin: 0;
+    animation: rainbowContainer 3s cubic-bezier(0, 1.11, 1, .54) normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+
+@keyframes rainbow {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 800% 0;
+    }
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+@keyframes rainbowContainer {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 99.5%;
+    }
 }
